@@ -1,22 +1,97 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+interface Props {
+  name?: string;
+  title?: string;
+  description?: string;
+  lang?: string;
+  image?: string;
+  keywords?: string;
+  currentPageURL?: string;
+}
+const {
+  name = "Karuna Law",
+  title = "Karuna Law",
+  description = "Law firm specializing in compassionate legal services for immigrants and refugees.",
+  lang = "en",
+  image = "/images/karuna-law.jpg",
+  keywords = "law firm, corporate law, family law, [location], legal services",
+  currentPageURL = "https://karunaLaw.ca",
+}: Props = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content={name} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="canonical" href={currentPageURL} />
+    <meta name="generator" content={Astro.generator} />
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:url" content={currentPageURL} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={name} />
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+
+
+    <!-- Schema Markup -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LegalService",
+			"name": "Karuna Law",
+			"description": "Compassionate legal services for immigrants and refugees in [City, Province].",
+			"url": {currentPageURL},
+			"logo": {image},
+			"telephone": "+1-416-580-7445",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "2275 Lakeshore Blvd W",
+				"addressLocality": "Toronto",
+				"addressRegion": "ON",
+				"postalCode": "M8V 3Y3",
+				"addressCountry": "CA"
+			},
+			"openingHours": "Mo-Fr 09:00-17:00",
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "43.6198018",
+				"longitude": "-79.4854579"
+			}
+		}
+	</script>
+    <title>{title}</title>
+  </head>
+<body class="flex flex-col justify-between min-h-screen bg-gray-50 scroll-smooth">
+ <!-- Header Component -->
+  <Header />
+ <!-- Main Content -->
+  <main class="flex w-full flex-col items-center justify-center">
+    <slot name="content">
+      <!-- Default content if slot is empty -->
+      <div class="text-center">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-4">Welcome to Karuna Law</h2>
+      </div>
+    </slot>
+  </main>
+  <Footer />
+
+  <script src="/src/scripts/slideInAnimation.js"></script>
+</body>
+</html>

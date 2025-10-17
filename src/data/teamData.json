@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Phil Trotter",
+    "title": "Lawyer",
+    "bio": "Phil brings extensive experience in legal practice with a focus on client-centered solutions. His approach combines strategic thinking with practical application, ensuring clients receive comprehensive legal guidance. With years of experience in various aspects of law, Phil has developed a reputation for clear communication and effective advocacy. He believes in building strong relationships with clients based on trust and transparency. Phil stays current with legal developments to provide the most relevant and effective counsel. His dedication to excellence and attention to detail ensure that every case receives thorough consideration. Outside the office, Phil is committed to community involvement and professional development. He takes pride in making complex legal matters accessible and understandable for his clients, guiding them through each step of their legal journey with confidence and care.",
+    "image": "/person.png",
+    "location": "Toronto, CA",
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/in/philtrotter",
+      "email": "mailto:phil.trotter@example.com"
+    }
+  },
+  {
+    "name": "Rinchen Phuntsok",
+    "title": "Lawyer",
+    "bio": "Rinchen is a dedicated legal professional known for his meticulous approach to case preparation and client advocacy. His practice emphasizes thorough research and strategic planning to achieve optimal outcomes. With a strong foundation in legal principles and a commitment to justice, Rinchen provides thoughtful counsel across various legal matters. He takes time to understand each client's unique circumstances and tailors his approach accordingly. Rinchen's analytical skills and attention to detail ensure that no aspect of a case is overlooked. He maintains strong professional relationships within the legal community while prioritizing client confidentiality and trust. Known for his calm demeanor and clear explanations, Rinchen helps clients navigate complex legal landscapes with confidence. His commitment to continuous learning keeps him at the forefront of legal developments. Rinchen believes in accessible legal services and works diligently to ensure every client feels heard, respected, and well-represented throughout their legal journey.",
+    "image": "/person.png",
+    "location": "Toronto, CA",
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/in/rinchenphuntsok",
+      "email": "mailto:rinchen.phuntsok@example.com"
+    }
+  },
+  {
+    "name": "Tenzin Yangphel",
+    "title": "Legal Assistant",
+    "bio": "Tenzin serves as an essential member of the legal team, providing critical support that keeps the practice running smoothly. With excellent organizational skills and a keen eye for detail, Tenzin ensures that all documentation and procedures are handled efficiently and accurately. Her role involves coordinating communications, managing case files, and assisting with legal research and document preparation. Tenzin's professionalism and dedication make her an invaluable resource for both the legal team and clients. She brings a warm, approachable manner to client interactions while maintaining the highest standards of confidentiality and professionalism. Her ability to multitask and prioritize ensures that urgent matters receive prompt attention. Tenzin takes pride in contributing to positive client experiences and successful case outcomes. Her commitment to excellence and continuous improvement reflects in the quality of her work. Understanding the importance of each detail in legal proceedings, Tenzin approaches every task with diligence and care, supporting the team's mission to provide outstanding legal services.",
+    "image": "/person.png",
+    "location": "Toronto, CA",
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/in/tenzin-yangphel",
+      "email": "mailto:tenzin.yangphel@example.com"
+    }
+  }
+]

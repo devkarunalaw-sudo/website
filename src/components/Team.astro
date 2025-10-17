@@ -1,0 +1,19 @@
+---
+import teamData from "../data/teamData.json";
+import BioCard from "./BioCard.astro";
+---
+
+<section class="bg-white">
+  {
+    teamData.map((member) => (
+      <BioCard
+        name={member.name}
+        role={member.title}
+        bio={member.bio}
+        imageUrl={member.image}
+        location={member.location}
+        socialLinks={member.socialLinks}
+      />
+    ))
+  }
+</section>

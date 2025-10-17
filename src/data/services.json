@@ -1,0 +1,58 @@
+{
+  "heading": "We Offer the Following Services",
+  "subheading": "Professional legal representation for all your immigration and refugee needs in Canada",
+  "services": [
+    {
+      "icon": "Scale",
+      "title": "Refugee Claims and Appeals",
+      "description": "Complete representation at the Immigration Refugee Board, Refugee Appeal Division, and Federal Court of Canada.",
+      "conditional": false,
+      "features": [
+        "Immigration Refugee Board hearings",
+        "Refugee Appeal Division cases",
+        "Federal Court of Canada appeals"
+      ]
+    },
+    {
+      "icon": "FileText",
+      "title": "Humanitarian & Compassionate Applications",
+      "description": "Expert assistance with H&C applications for permanent residency, Pre-Risk Removal Assessments, and other applications to Immigration, Refugees, Citizenship Canada.",
+      "conditional": false,
+      "features": [
+        "Permanent residency applications",
+        "Pre-Risk Removal Assessments",
+        "Applications to IRCC"
+      ]
+    },
+    {
+      "icon": "Users",
+      "title": "Sponsorship Applications",
+      "description": "We may be able to assist you with sponsorship applications for permanent residence.",
+      "conditional": true,
+      "features": [
+        "Spousal sponsorship",
+        "Parent and grandparent sponsorship",
+        "Dependent children sponsorship"
+      ]
+    },
+    {
+      "icon": "Globe",
+      "title": "Study and Work Permits",
+      "description": "We may be able to assist you with study and work permit applications and other immigration matters.",
+      "conditional": true,
+      "features": [
+        "Study permit applications",
+        "Work permit applications",
+        "Visitor visa extensions"
+      ]
+    }
+  ],
+  "additionalInfo": {
+    "title": "Need Help with Something Else?",
+    "description": "We can also assist you with other immigration matters. If we are not able to help you, we can refer you to lawyers who can."
+  },
+  "cta": {
+    "text": "Schedule a Consultation",
+    "link": "/contact"
+  }
+}

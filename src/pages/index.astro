@@ -1,11 +1,34 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import HeroSection from "../components/HeroSection.astro";
+import Layout from "../layouts/Layout.astro";
+import AddressCard from "../components/AddressCard.astro";
+import OfficeCard from "../components/OfficeCard.astro";
+import Services from "../components/Services.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <div
+    class="flex flex-col items-center justify-center w-full mx-auto"
+    slot="content"
+  >
+    <HeroSection />
+    <div class="w-full blue-gradient">
+      <Services />
+    </div>
+
+    <AddressCard
+      title="Karuna Law Office"
+      description="If you would like to consult with us, or retain us for our services, please make an appointment by email to"
+      addressLine1="2275"
+      addressLine2="Lake Shore Blvd W Etobicoke"
+      city="Toronto"
+      province="ON"
+      postalCode="M8V 3Y3"
+      country="Canada"
+      latitude={43.6195725}
+      longitude={-79.4852031}
+    />
+
+    <OfficeCard />
+  </div>
 </Layout>

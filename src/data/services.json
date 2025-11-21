@@ -1,49 +1,27 @@
 {
   "heading": "We Offer the Following Services",
-  "subheading": "Professional legal representation for all your immigration and refugee needs in Canada",
+  "subheading": "",
   "services": [
     {
       "icon": "Scale",
       "title": "Refugee Claims and Appeals",
-      "description": "Complete representation at the Immigration Refugee Board, Refugee Appeal Division, and Federal Court of Canada.",
+      "description": "Complete representation at the Immigration Refugee Board, Refugee Appeal Division, and Federal Court of Canada, Including:",
       "conditional": false,
       "features": [
         "Immigration Refugee Board hearings",
         "Refugee Appeal Division cases",
-        "Federal Court of Canada appeals"
-      ]
-    },
-    {
-      "icon": "FileText",
-      "title": "Humanitarian & Compassionate Applications",
-      "description": "Expert assistance with H&C applications for permanent residency, Pre-Risk Removal Assessments, and other applications to Immigration, Refugees, Citizenship Canada.",
-      "conditional": false,
-      "features": [
-        "Permanent residency applications",
-        "Pre-Risk Removal Assessments",
-        "Applications to IRCC"
+        "Federal Court of Canada appliations and motions"
       ]
     },
     {
       "icon": "Users",
-      "title": "Sponsorship Applications",
-      "description": "We may be able to assist you with sponsorship applications for permanent residence.",
-      "conditional": true,
+      "title": "Other Immigration Services",
+      "description": "We may be able to assist you with following:",
+      "conditional": false,
       "features": [
-        "Spousal sponsorship",
-        "Parent and grandparent sponsorship",
-        "Dependent children sponsorship"
-      ]
-    },
-    {
-      "icon": "Globe",
-      "title": "Study and Work Permits",
-      "description": "We may be able to assist you with study and work permit applications and other immigration matters.",
-      "conditional": true,
-      "features": [
-        "Study permit applications",
-        "Work permit applications",
-        "Visitor visa extensions"
+        "Family unification applications for permenent recidence",
+        "Temporary residence visa applications",
+        "Humanitarian and compassionate applications"
       ]
     }
   ],

@@ -2,34 +2,63 @@
   {
     "name": "Phil Trotter",
     "title": "Lawyer",
-    "bio": "Phil brings extensive experience in legal practice with a focus on client-centered solutions. His approach combines strategic thinking with practical application, ensuring clients receive comprehensive legal guidance. With years of experience in various aspects of law, Phil has developed a reputation for clear communication and effective advocacy. He believes in building strong relationships with clients based on trust and transparency. Phil stays current with legal developments to provide the most relevant and effective counsel. His dedication to excellence and attention to detail ensure that every case receives thorough consideration. Outside the office, Phil is committed to community involvement and professional development. He takes pride in making complex legal matters accessible and understandable for his clients, guiding them through each step of their legal journey with confidence and care.",
-    "image": "/person.png",
+    "bio": [
+      "Phil Trotter is the senior lawyer and founder of Karuna Law Office. An immigration lawyer since 2010, he has successfully helped refugees settle in Canada, with greatersecurity, human rights and freedom.",
+      "Phil is a member in good standing with the Law Society of Ontario. He has represented refugees and migrants at the Immigration and Refugee Board (IRB), Refugee Protection Division (RPD), Refugee Appeal Division (RAD), Immigration Appeal Division (IAD), Federal Court and Federal Court of Appeal. Phil has also helped many refused refugees and other migrants obtain permanent residence through humanitarian and ompassionate applications, and family class sponsorship permanent resident applications.",
+      "Phil became a lawyer with the intention to be of service and benefit to people. Phil works with others to get positive results, with ethical efficiency, emphasizing truthfulness and kindness as the best way forward. After obtaining his law degree at McGill University in Montreal, Phil moved to Toronto, where he started his law practice in 2010. Since 2010, he has served and represented refugees from all over the world, helping them resettle with greater security and human rights in Canada. Phil has also been involved in politics, with the aim of contributing to a better world. Since 2019, he has been mostly representing Tibetan Buddhist refugees from India, Nepal, and Bhutan. This accords well with his personal life, since he has been practicing Tibetan Buddhism since 2006."
+    ],
+    "image": "/phil_trotter.jpg",
     "location": "Toronto, CA",
     "socialLinks": {
       "linkedin": "https://www.linkedin.com/in/philtrotter",
       "email": "mailto:phil.trotter@example.com"
-    }
+    },
+
+    "articles": [
+      {
+        "title": "Understanding Immigration Law Changes in 2024",
+        "date": "2024-10-15",
+        "url": "/blog/immigration-law-changes-2024",
+        "description": "An overview of recent changes to Canadian immigration law and what they mean for applicants."
+      },
+      {
+        "title": "Guide to Family Sponsorship Applications",
+        "date": "2024-09-20",
+        "url": "/blog/family-sponsorship-guide",
+        "description": "A comprehensive guide to navigating the family sponsorship process."
+      }
+    ]
   },
   {
     "name": "Rinchen Phuntsok",
     "title": "Lawyer",
-    "bio": "Rinchen is a dedicated legal professional known for his meticulous approach to case preparation and client advocacy. His practice emphasizes thorough research and strategic planning to achieve optimal outcomes. With a strong foundation in legal principles and a commitment to justice, Rinchen provides thoughtful counsel across various legal matters. He takes time to understand each client's unique circumstances and tailors his approach accordingly. Rinchen's analytical skills and attention to detail ensure that no aspect of a case is overlooked. He maintains strong professional relationships within the legal community while prioritizing client confidentiality and trust. Known for his calm demeanor and clear explanations, Rinchen helps clients navigate complex legal landscapes with confidence. His commitment to continuous learning keeps him at the forefront of legal developments. Rinchen believes in accessible legal services and works diligently to ensure every client feels heard, respected, and well-represented throughout their legal journey.",
+    "bio": [
+      "Phil Trotter is the senior lawyer and founder of Karuna Law Office. An immigration lawyer since 2010, he has successfully helped refugees settle in Canada, with greatersecurity, human rights and freedom.",
+      "Phil is a member in good standing with the Law Society of Ontario. He has represented refugees and migrants at the Immigration and Refugee Board (IRB), Refugee Protection Division (RPD), Refugee Appeal Division (RAD), Immigration Appeal Division (IAD), Federal Court and Federal Court of Appeal. Phil has also helped many refused refugees and other migrants obtain permanent residence through humanitarian and ompassionate applications, and family class sponsorship permanent resident applications.",
+      "Phil became a lawyer with the intention to be of service and benefit to people. Phil works with others to get positive results, with ethical efficiency, emphasizing truthfulness and kindness as the best way forward. After obtaining his law degree at McGill University in Montreal, Phil moved to Toronto, where he started his law practice in 2010. Since 2010, he has served and represented refugees from all over the world, helping them resettle with greater security and human rights in Canada. Phil has also been involved in politics, with the aim of contributing to a better world. Since 2019, he has been mostly representing Tibetan Buddhist refugees from India, Nepal, and Bhutan. This accords well with his personal life, since he has been practicing Tibetan Buddhism since 2006."
+    ],
     "image": "/person.png",
     "location": "Toronto, CA",
     "socialLinks": {
       "linkedin": "https://www.linkedin.com/in/rinchenphuntsok",
       "email": "mailto:rinchen.phuntsok@example.com"
-    }
+    },
+    "articles": []
   },
   {
     "name": "Tenzin Yangphel",
     "title": "Legal Assistant",
-    "bio": "Tenzin serves as an essential member of the legal team, providing critical support that keeps the practice running smoothly. With excellent organizational skills and a keen eye for detail, Tenzin ensures that all documentation and procedures are handled efficiently and accurately. Her role involves coordinating communications, managing case files, and assisting with legal research and document preparation. Tenzin's professionalism and dedication make her an invaluable resource for both the legal team and clients. She brings a warm, approachable manner to client interactions while maintaining the highest standards of confidentiality and professionalism. Her ability to multitask and prioritize ensures that urgent matters receive prompt attention. Tenzin takes pride in contributing to positive client experiences and successful case outcomes. Her commitment to excellence and continuous improvement reflects in the quality of her work. Understanding the importance of each detail in legal proceedings, Tenzin approaches every task with diligence and care, supporting the team's mission to provide outstanding legal services.",
+    "bio": [
+      "Phil Trotter is the senior lawyer and founder of Karuna Law Office. An immigration lawyer since 2010, he has successfully helped refugees settle in Canada, with greatersecurity, human rights and freedom.",
+      "Phil is a member in good standing with the Law Society of Ontario. He has represented refugees and migrants at the Immigration and Refugee Board (IRB), Refugee Protection Division (RPD), Refugee Appeal Division (RAD), Immigration Appeal Division (IAD), Federal Court and Federal Court of Appeal. Phil has also helped many refused refugees and other migrants obtain permanent residence through humanitarian and ompassionate applications, and family class sponsorship permanent resident applications.",
+      "Phil became a lawyer with the intention to be of service and benefit to people. Phil works with others to get positive results, with ethical efficiency, emphasizing truthfulness and kindness as the best way forward. After obtaining his law degree at McGill University in Montreal, Phil moved to Toronto, where he started his law practice in 2010. Since 2010, he has served and represented refugees from all over the world, helping them resettle with greater security and human rights in Canada. Phil has also been involved in politics, with the aim of contributing to a better world. Since 2019, he has been mostly representing Tibetan Buddhist refugees from India, Nepal, and Bhutan. This accords well with his personal life, since he has been practicing Tibetan Buddhism since 2006."
+    ],
     "image": "/person.png",
     "location": "Toronto, CA",
     "socialLinks": {
       "linkedin": "https://www.linkedin.com/in/tenzin-yangphel",
       "email": "mailto:tenzin.yangphel@example.com"
-    }
+    },
+    "articles": []
   }
 ]

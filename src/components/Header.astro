@@ -3,22 +3,27 @@ import logo from "../assets/karuna_logo.svg";
 ---
 
 <header
-  class="flex flex-col w-full min-h-14 gap-2 bg-white shadow-sm fixed left-0 top-0 z-30"
+  class="flex flex-col justify-center w-full min-h-14 gap-2 bg-dharma-burgundy shadow-sm fixed left-0 top-0 z-30"
 >
   <div
-    class="flex items-center justify-between gap-4 w-full md:w-4/6 max-w-6xl mx-auto md:px-0"
+    class="flex items-center justify-between px-4 gap-4 w-full md:w-4/6 max-w-6xl mx-auto md:px-0"
   >
-    <div class="text-dark-charcoal font-bold">
-      <a href="https://astro.build"
-        ><img src={logo.src} width="48" height="48" alt="Karuna Homepage" /></a
+    <div class="flex items-center">
+      <a
+        href="https://astro.build"
+        class="w-10 h-10 bg-gray-100 rounded flex items-center justify-center"
       >
+        <img src={logo.src} alt="Karuna Law Logo" class="w-8 h-8" />
+      </a>
     </div>
+
     <nav class="hidden md:flex gap-4 ml-auto">
       <a href="/" class="nav-link">Home</a>
-      <a href="/about" class="nav-link">About</a>
+      <a href="/team" class="nav-link">Our Team</a>
+      <a href="/office" class="nav-link">Office</a>
     </nav>
     <button
-      class="md:hidden flex items-center justify-center w-10 h-10 bg-primary-500 text-secondary-500 rounded-full relative"
+      class="md:hidden flex items-center justify-center w-10 h-10 rounded-full relative text-white hover:bg-dharma-gold-hover transition-colors"
       aria-label="Toggle Navigation"
       id="nav-toggle"
     >
@@ -57,7 +62,8 @@ import logo from "../assets/karuna_logo.svg";
     class="md:hidden flex flex-col items-center py-0 gap-2 max-h-0 overflow-hidden transition-all duration-700 ease-in-out"
   >
     <a href="/" class="nav-link">Home</a>
-    <a href="/about" class="nav-link">About</a>
+    <a href="/team" class="nav-link">Our Team</a>
+    <a href="/office" class="nav-link">Office</a>
   </nav>
 </header>
 

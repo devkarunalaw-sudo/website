@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  /* Original Colors */
   --color-soft-white: #fcfcfc;
   --color-dark-charcoal: #2b2827;
   --color-dark-navey: #111c42;
@@ -8,6 +9,32 @@
   --color-secondary: #e8402a;
   --color-heading: #456db5;
   --color-text-highlight: #5498fe;
+
+  /* Dharma-inspired Burgundy Theme */
+  --color-dharma-burgundy: #7c1000;
+  --color-dharma-gold: #edba1c;
+  --color-dharma-dark-red: #3f0000;
+  --color-dharma-light-gold: #f8e3a4;
+  --color-dharma-gold-hover: #deac12;
+
+  /* Extended Neutrals */
+  --color-text-primary: #262626;
+  --color-text-muted: #a6a6a6;
+  --color-border: #c4c4c4;
+  --color-border-light: #e5e5e5;
+  --color-bg-light: #f5f5f5;
+  --color-bg-lighter: #f2f2f2;
+  
+  /* Social/Accent Colors */
+  --color-selection: #adcfe8;
+  --color-facebook: #39589b;
+  --color-twitter: #50abf1;
+
+  /* Semantic Color Mappings */
+  --color-accent: var(--color-dharma-gold);
+  --color-accent-hover: var(--color-dharma-gold-hover);
+  --color-brand: var(--color-dharma-burgundy);
+  --color-brand-dark: var(--color-dharma-dark-red);
 }
 
 @layer components {
@@ -16,6 +43,7 @@
     padding-inline: calc(var(--spacing) * 4);
     margin-inline: auto;
   }
+
   .blue-gradient {
     background-image: linear-gradient(
       to top,
@@ -25,7 +53,7 @@
       #e6f0f9,
       #ebf3fa,
       #ebf3fa,
-      #ebf3f9,
+      #ebf3f3,
       #ebf3f9,
       #e6f0f8,
       #e1edf7,
@@ -33,14 +61,100 @@
       #d8e6f5
     );
   }
+
+    /* Dharma Burgundy Gradient - Rich & Deep */
+  .dharma-gradient {
+     background-image: linear-gradient(to top, #3f0000, #3f0000, #3f0000, #3f0000, #3f0000, #440001, #490102, #4e0103, #5a0304, #650504, #710a03, #7c1000);
+  }
+
+  .gold-gradient {
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-dharma-gold),
+      var(--color-dharma-gold-hover)
+    );
+  }
+
+  .dharma-header {
+    background-color: var(--color-dharma-burgundy);
+    background-image: url('/static/min/img/header-bg-slice.jpg');
+    background-repeat: repeat-x;
+    background-position: center center;
+  }
+
+  .dharma-button {
+    @apply font-bold py-2 px-4 uppercase text-text-primary inline-block;
+    background-color: var(--color-dharma-gold);
+    transition: background-color 0.2s;
+  }
+
+  .dharma-button:hover {
+    background-color: var(--color-dharma-gold-hover);
+    text-decoration: none;
+  }
+
+  .dharma-card {
+    @apply overflow-hidden;
+    background-color: var(--color-bg-light);
+    border-left: 1px solid var(--color-border);
+  }
+
+  .dharma-nav-link {
+    @apply inline-block font-extrabold uppercase;
+    padding: 11px 17px 12px 15px;
+    color: var(--color-text-primary);
+    transition: all 0.2s;
+  }
+
+  .dharma-nav-link:hover,
+  .dharma-nav-link.active {
+    background-color: var(--color-dharma-gold-hover);
+    text-decoration: none;
+  }
 }
 
 @layer utilities {
   .nav-link {
-    @apply text-dark-charcoal text-base hover:text-primary;
+    @apply text-white text-base font-bold hover:text-dharma-gold-hover transition-colors;
   }
+
   .z-front {
     z-index: 9999;
+  }
+
+  /* Dharma-specific text colors */
+  .text-dharma-burgundy {
+    color: var(--color-dharma-burgundy);
+  }
+
+  .text-dharma-gold {
+    color: var(--color-dharma-gold);
+  }
+
+  .text-muted {
+    color: var(--color-text-muted);
+  }
+
+  /* Dharma-specific backgrounds */
+  .bg-dharma-burgundy {
+    background-color: var(--color-dharma-burgundy);
+  }
+
+  .bg-dharma-gold {
+    background-color: var(--color-dharma-gold);
+  }
+
+  .bg-dharma-light {
+    background-color: var(--color-bg-light);
+  }
+
+  /* Dharma-specific borders */
+  .border-dharma-burgundy {
+    border-color: var(--color-dharma-burgundy);
+  }
+
+  .border-dharma-gold {
+    border-color: var(--color-dharma-gold);
   }
 
   /* Fixed Slide-in utility classes */
@@ -52,13 +166,11 @@
     will-change: transform, opacity;
   }
 
-  /* Active state when element is visible */
   .slide-in.active {
     opacity: 1;
     transform: translateX(0);
   }
 
-  /* Alternative slide directions */
   .slide-in-right {
     position: relative;
     opacity: 0;
@@ -85,17 +197,14 @@
     transform: translateY(0);
   }
 
-
-  /* Add more nth-child rules as needed for additional elements */
-
-  /* Mobile-specific adjustments - maintain directional differences */
+  /* Mobile-specific adjustments */
   @media (max-width: 640px) {
     .slide-in {
-      transform: translateX(-30px); /* Reduced left slide for mobile */
+      transform: translateX(-30px);
     }
     
     .slide-in-right {
-      transform: translateX(30px); /* Reduced right slide for mobile */
+      transform: translateX(30px);
     }
     
     .slide-in.active,
@@ -108,7 +217,7 @@
   /* Medium screen specific fixes */
   @media (min-width: 641px) and (max-width: 1024px) {
     .slide-in {
-      transform: translateX(-50px); /* Reduced movement for medium screens */
+      transform: translateX(-50px);
     }
     
     .slide-in-right {
@@ -125,7 +234,7 @@
   /* Large screen enhancements */
   @media (min-width: 1025px) {
     .slide-in {
-      transform: translateX(-120px); /* Enhanced movement for large screens */
+      transform: translateX(-120px);
     }
     
     .slide-in-right {
@@ -133,10 +242,9 @@
     }
     
     .slide-in-up {
-      transform: translateY(80px); /* More dramatic upward movement */
+      transform: translateY(80px);
     }
     
-    /* Enhanced active states for large screens */
     .slide-in.active,
     .slide-in-right.active,
     .slide-in-up.active {
@@ -150,6 +258,17 @@
     --background: var(--color-base-50);
     --radius: 0.7rem;
     --spacing: 0.25rem;
+  }
+
+  /* Custom text selection color */
+  ::selection {
+    color: #fff;
+    background: var(--color-selection);
+  }
+
+  ::-moz-selection {
+    color: #fff;
+    background: var(--color-selection);
   }
 }
 

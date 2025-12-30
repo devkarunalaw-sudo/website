@@ -32,7 +32,7 @@ const {
     <meta name="keywords" content={keywords} />
     <meta name="robots" content="index, follow" />
     <meta name="author" content={name} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="canonical" href={currentPageURL} />
     <meta name="generator" content={Astro.generator} />
@@ -92,6 +92,6 @@ const {
   </main>
   <Footer />
 
-  <script src="/src/scripts/slideInAnimation.js"></script>
+  <script is:inline src={`${import.meta.env.BASE_URL}scripts/slideInAnimation.js`}></script>
 </body>
 </html>

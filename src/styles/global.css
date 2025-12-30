@@ -75,13 +75,6 @@
     );
   }
 
-  .dharma-header {
-    background-color: var(--color-dharma-burgundy);
-    background-image: url('/static/min/img/header-bg-slice.jpg');
-    background-repeat: repeat-x;
-    background-position: center center;
-  }
-
   .dharma-button {
     @apply font-bold py-2 px-4 uppercase text-text-primary inline-block;
     background-color: var(--color-dharma-gold);

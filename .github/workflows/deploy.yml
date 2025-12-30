@@ -4,13 +4,19 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+  # Remove pull_request trigger to avoid deploying on PRs
+  # pull_request:
+  #   branches:
+  #     - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
+    # Add permissions for the GITHUB_TOKEN
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -18,12 +24,17 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install dependencies
         run: npm install
 
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

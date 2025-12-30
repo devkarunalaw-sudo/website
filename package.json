@@ -6,20 +6,20 @@
     "dev": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "astro build && gh-pages -d dist -r https://github.com/karuna-law/karunaLaw.git"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.12",
     "@lucide/astro": "^0.545.0",
-    "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.12.8",
     "lucide-astro": "^0.545.0",
     "lucide-react": "^0.539.0",
-    "markdown-it": "^14.1.0",
     "swiper": "^11.2.10",
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
-    "@types/markdown-it": "^14.1.2"
+    "@tailwindcss/vite": "^4.1.11",
+    "gh-pages": "^6.1.1"
   }
 }

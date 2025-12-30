@@ -1,5 +1,6 @@
 ---
 import logo from "../assets/karuna_logo.svg";
+import { BASE_URL } from "../consts";
 const currentYear = new Date().getFullYear();
 ---
 
@@ -70,7 +71,7 @@ const currentYear = new Date().getFullYear();
       <!-- Company -->
       <div>
         <a
-          href="/"
+          href={BASE_URL}
           class="text-white hover:text-dharma-gold-hover font-medium mb-4"
         >
           Karuna Law
@@ -78,14 +79,14 @@ const currentYear = new Date().getFullYear();
         <ul class="space-y-1">
           <li>
             <a
-              href="/team"
+              href=`${BASE_URL}team`}
               class="text-white hover:text-dharma-gold-hover transition-colors"
               >Our Team</a
             >
           </li>
           <li>
             <a
-              href="/office"
+              href=`${BASE_URL}office`}
               class="text-white hover:text-dharma-gold-hover transition-colors"
               >Office</a
             >

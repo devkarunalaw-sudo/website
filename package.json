@@ -7,7 +7,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "astro build && gh-pages -d dist -r https://github.com/karuna-law/karunaLaw.git"
+    "deploy": "astro build && gh-pages -d dist"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.12",

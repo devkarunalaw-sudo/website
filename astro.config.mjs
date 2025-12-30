@@ -6,8 +6,8 @@ import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://karuna-law.github.io',
-  base: '/karunaLaw',
+  site: 'https://devkarunalaw-sudo.github.io',
+  base: '/website',
   vite: {
     plugins: [tailwindcss()]
   },

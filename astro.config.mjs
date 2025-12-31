@@ -4,8 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import mdx from "@astrojs/mdx";
 
 export default defineConfig({
-  site: "https://devkarunalaw-sudo.github.io",
-  base: "/website/",
+  site: "https://www.karunalaw.ca",
   vite: {
     plugins: [tailwindcss()],
   },

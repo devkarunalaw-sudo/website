@@ -32,7 +32,11 @@ const {
     <meta name="keywords" content={keywords} />
     <meta name="robots" content="index, follow" />
     <meta name="author" content={name} />
-    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href={`${import.meta.env.BASE_URL}favicon.svg`}
+    />
 
     <link rel="canonical" href={currentPageURL} />
     <meta name="generator" content={Astro.generator} />
@@ -49,49 +53,49 @@ const {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={image} />
 
-
     <!-- Schema Markup -->
-	<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "LegalService",
-			"name": "Karuna Law",
-			"description": "Compassionate legal services for immigrants and refugees in [City, Province].",
-			"url": {currentPageURL},
-			"logo": {image},
-			"telephone": "+1-416-580-7445",
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "2275 Lakeshore Blvd W",
-				"addressLocality": "Toronto",
-				"addressRegion": "ON",
-				"postalCode": "M8V 3Y3",
-				"addressCountry": "CA"
-			},
-			"openingHours": "Mo-Fr 09:00-17:00",
-			"geo": {
-				"@type": "GeoCoordinates",
-				"latitude": "43.6198018",
-				"longitude": "-79.4854579"
-			}
-		}
-	</script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Karuna Law",
+        "description": "Compassionate legal services for immigrants and refugees in [City, Province].",
+        "url": "https://www.karunalaw.ca",
+        "telephone": "+1-416-580-7445",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2275 Lakeshore Blvd W",
+          "addressLocality": "Toronto",
+          "addressRegion": "ON",
+          "postalCode": "M8V 3Y3",
+          "addressCountry": "CA"
+        },
+        "openingHours": "Mo-Fr 09:00-17:00",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "43.6198018",
+          "longitude": "-79.4854579"
+        }
+      }
+    </script>
     <title>{title}</title>
   </head>
-<body class="flex flex-col justify-between min-h-screen  scroll-smooth">
- <!-- Header Component -->
-  <Header />
- <!-- Main Content -->
-  <main class="flex w-full flex-col items-center justify-center">
-    <slot name="content">
-      <!-- Default content if slot is empty -->
-      <div class="text-center">
-        <h2 class="text-3xl font-semibold text-gray-800 mb-4">Welcome to Karuna Law</h2>
-      </div>
-    </slot>
-  </main>
-  <Footer />
+  <body class="flex flex-col justify-between min-h-screen scroll-smooth">
+    <!-- Header Component -->
+    <Header />
+    <!-- Main Content -->
+    <main class="flex w-full flex-col items-center justify-center">
+      <slot name="content">
+        <!-- Default content if slot is empty -->
+        <div class="text-center">
+          <h2 class="text-3xl font-semibold text-gray-800 mb-4">
+            Welcome to Karuna Law
+          </h2>
+        </div>
+      </slot>
+    </main>
+    <Footer />
 
-  <script src={`${import.meta.env.BASE_URL}scripts/slideInAnimation.js`}></script>
-</body>
+    <script src="../scripts/slideInAnimation.js"></script>
+  </body>
 </html>

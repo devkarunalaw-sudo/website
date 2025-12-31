@@ -12,8 +12,6 @@ export async function getStaticPaths() {
 }
 
 const { member } = Astro.props;
-console.log("BASE_URL on member page:", BASE_URL);
-console.log("Member image on member page:", member.image);
 ---
 
 <Layout title={`Karuna Law - ${member.name}`}>
@@ -114,7 +112,7 @@ console.log("Member image on member page:", member.image);
       </div>
 
       <a
-        href=`${BASE_URL}team`}
+        href=`${BASE_URL}team`
         class="mt-8 inline-block text-red-700 hover:text-red-800 hover:underline"
       >
         ← Back
